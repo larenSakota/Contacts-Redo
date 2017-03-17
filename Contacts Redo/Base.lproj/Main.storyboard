@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -69,7 +70,46 @@
                     <view key="view" contentMode="scaleToFill" id="m5G-GZ-QtQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZLe-Or-Ty8">
+                                <rect key="frame" x="137" y="64" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="7Zv-av-oeg"/>
+                                    <constraint firstAttribute="width" constant="100" id="XDc-es-0f2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5r-r5-G8Q">
+                                <rect key="frame" x="16" y="172" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ber-XY-6Gx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Saj-af-Zi1">
+                                <rect key="frame" x="16" y="220" width="343" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8tW-cA-Oxj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q5r-r5-G8Q" firstAttribute="leading" secondItem="m5G-GZ-QtQ" secondAttribute="leadingMargin" id="18x-FM-FG7"/>
+                            <constraint firstItem="Saj-af-Zi1" firstAttribute="top" secondItem="Q5r-r5-G8Q" secondAttribute="bottom" constant="8" id="3xR-xj-n9C"/>
+                            <constraint firstItem="Q5r-r5-G8Q" firstAttribute="trailing" secondItem="m5G-GZ-QtQ" secondAttribute="trailingMargin" id="6Um-GB-V71"/>
+                            <constraint firstItem="ZLe-Or-Ty8" firstAttribute="top" secondItem="fS0-5H-XXc" secondAttribute="bottom" id="Iqt-iz-ejT"/>
+                            <constraint firstItem="Saj-af-Zi1" firstAttribute="leading" secondItem="m5G-GZ-QtQ" secondAttribute="leadingMargin" id="Kpa-S4-NI2"/>
+                            <constraint firstItem="ZLe-Or-Ty8" firstAttribute="centerX" secondItem="m5G-GZ-QtQ" secondAttribute="centerX" id="PGH-ck-gpm"/>
+                            <constraint firstItem="Saj-af-Zi1" firstAttribute="trailing" secondItem="m5G-GZ-QtQ" secondAttribute="trailingMargin" id="R0K-Fd-Aat"/>
+                            <constraint firstItem="Q5r-r5-G8Q" firstAttribute="centerX" secondItem="m5G-GZ-QtQ" secondAttribute="centerX" id="Vks-HW-8rg"/>
+                            <constraint firstItem="Saj-af-Zi1" firstAttribute="centerX" secondItem="m5G-GZ-QtQ" secondAttribute="centerX" id="bNa-Yh-B5W"/>
+                            <constraint firstItem="Q5r-r5-G8Q" firstAttribute="top" secondItem="ZLe-Or-Ty8" secondAttribute="bottom" constant="8" id="dbW-nJ-gER"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="yUF-hk-D7g">
@@ -80,10 +120,15 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="Q5r-r5-G8Q" id="mcu-rX-vOL"/>
+                        <outlet property="phoneLabel" destination="Saj-af-Zi1" id="Kol-oA-nuy"/>
+                        <outlet property="photo" destination="ZLe-Or-Ty8" id="WMI-Ga-Iba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndg-tb-AT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1841" y="127"/>
+            <point key="canvasLocation" x="2356" y="126.38680659670166"/>
         </scene>
         <!--Edit Contact Controller-->
         <scene sceneID="nQR-eB-J49">
@@ -119,7 +164,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIp-4G-H3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1841" y="972"/>
+            <point key="canvasLocation" x="2356" y="894"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nVe-8O-CqY">
@@ -137,7 +182,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YiH-mi-9ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="128"/>
+            <point key="canvasLocation" x="73" y="126"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tjF-ys-r6c">
@@ -155,7 +200,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYh-st-wLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1378" y="972"/>
+            <point key="canvasLocation" x="1582" y="894"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c1D-CC-bJO">
@@ -173,11 +218,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loZ-0Q-UFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="-367"/>
+            <point key="canvasLocation" x="1583" y="-364"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Zh4-5g-xcA"/>
         <segue reference="8IF-1k-cdj"/>
-        <segue reference="iRn-lk-ZVU"/>
     </inferredMetricsTieBreakers>
 </document>

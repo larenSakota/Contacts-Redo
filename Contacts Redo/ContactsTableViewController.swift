@@ -18,9 +18,10 @@ class ContactsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sheilla = Contact(name: "Sheilla", number: "12345")
+        loadSampleContacts()
         
-        self.contacts.append(sheilla)
+//        let sheilla = Contact(name: "Sheilla Sakota", number: "123-456-7890")
+//        self.contacts.append(sheilla)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -95,14 +96,40 @@ class ContactsTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell)!
+        let contact = self.contacts[indexPath.row]
+        let destination = segue.destination as! DetailViewController
+        destination.contact = contact
     }
-    */
+    
+    //MARK: Private Methods
+    
+    private func loadSampleContacts() {
+        
+        let photo1 = UIImage(named: "contact1")
+        
+        let contact1 = Contact(name: "Sheilla Sakota", number: "123-456-7890", photo: photo1)
+        
+        contacts += [contact1]
+    }
+    
+    private func saveContacts() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(contacts, toFile: Contact.ArchiveURL.path)
+        if isSuccessfulSave {
+            os_log("Contacts successfully saved.", log: OSLog.default, type: .debug)
+        } else {
+            os_log("Failed to save contacts...", log: OSLog.default, type: .error)
+        }
+    }
+    
+    private func loadContacts() -> [Contact]?  {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact]
+    }
+
 
 }
