@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74D7FD1A1E7B826B00070158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD191E7B826B00070158 /* AppDelegate.swift */; };
+		74D7FD1C1E7B826B00070158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD1B1E7B826B00070158 /* ViewController.swift */; };
+		74D7FD1F1E7B826B00070158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D7FD1D1E7B826B00070158 /* Main.storyboard */; };
+		74D7FD211E7B826B00070158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D7FD201E7B826B00070158 /* Assets.xcassets */; };
+		74D7FD241E7B826B00070158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D7FD221E7B826B00070158 /* LaunchScreen.storyboard */; };
+		74D7FD2F1E7B826B00070158 /* Contacts_RedoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD2E1E7B826B00070158 /* Contacts_RedoTests.swift */; };
+		74D7FD3A1E7B826B00070158 /* Contacts_RedoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD391E7B826B00070158 /* Contacts_RedoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74D7FD2B1E7B826B00070158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74D7FD0E1E7B826B00070158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74D7FD151E7B826B00070158;
+			remoteInfo = "Contacts Redo";
+		};
+		74D7FD361E7B826B00070158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74D7FD0E1E7B826B00070158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74D7FD151E7B826B00070158;
+			remoteInfo = "Contacts Redo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74D7FD161E7B826B00070158 /* Contacts Redo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contacts Redo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D7FD191E7B826B00070158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74D7FD1B1E7B826B00070158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74D7FD1E1E7B826B00070158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74D7FD201E7B826B00070158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74D7FD231E7B826B00070158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74D7FD251E7B826B00070158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D7FD2A1E7B826B00070158 /* Contacts RedoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contacts RedoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D7FD2E1E7B826B00070158 /* Contacts_RedoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts_RedoTests.swift; sourceTree = "<group>"; };
+		74D7FD301E7B826B00070158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D7FD351E7B826B00070158 /* Contacts RedoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contacts RedoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D7FD391E7B826B00070158 /* Contacts_RedoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts_RedoUITests.swift; sourceTree = "<group>"; };
+		74D7FD3B1E7B826B00070158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74D7FD131E7B826B00070158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D7FD271E7B826B00070158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D7FD321E7B826B00070158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74D7FD0D1E7B826B00070158 = {
+			isa = PBXGroup;
+			children = (
+				74D7FD181E7B826B00070158 /* Contacts Redo */,
+				74D7FD2D1E7B826B00070158 /* Contacts RedoTests */,
+				74D7FD381E7B826B00070158 /* Contacts RedoUITests */,
+				74D7FD171E7B826B00070158 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74D7FD171E7B826B00070158 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74D7FD161E7B826B00070158 /* Contacts Redo.app */,
+				74D7FD2A1E7B826B00070158 /* Contacts RedoTests.xctest */,
+				74D7FD351E7B826B00070158 /* Contacts RedoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74D7FD181E7B826B00070158 /* Contacts Redo */ = {
+			isa = PBXGroup;
+			children = (
+				74D7FD191E7B826B00070158 /* AppDelegate.swift */,
+				74D7FD1B1E7B826B00070158 /* ViewController.swift */,
+				74D7FD1D1E7B826B00070158 /* Main.storyboard */,
+				74D7FD201E7B826B00070158 /* Assets.xcassets */,
+				74D7FD221E7B826B00070158 /* LaunchScreen.storyboard */,
+				74D7FD251E7B826B00070158 /* Info.plist */,
+			);
+			path = "Contacts Redo";
+			sourceTree = "<group>";
+		};
+		74D7FD2D1E7B826B00070158 /* Contacts RedoTests */ = {
+			isa = PBXGroup;
+			children = (
+				74D7FD2E1E7B826B00070158 /* Contacts_RedoTests.swift */,
+				74D7FD301E7B826B00070158 /* Info.plist */,
+			);
+			path = "Contacts RedoTests";
+			sourceTree = "<group>";
+		};
+		74D7FD381E7B826B00070158 /* Contacts RedoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74D7FD391E7B826B00070158 /* Contacts_RedoUITests.swift */,
+				74D7FD3B1E7B826B00070158 /* Info.plist */,
+			);
+			path = "Contacts RedoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74D7FD151E7B826B00070158 /* Contacts Redo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D7FD3E1E7B826B00070158 /* Build configuration list for PBXNativeTarget "Contacts Redo" */;
+			buildPhases = (
+				74D7FD121E7B826B00070158 /* Sources */,
+				74D7FD131E7B826B00070158 /* Frameworks */,
+				74D7FD141E7B826B00070158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Contacts Redo";
+			productName = "Contacts Redo";
+			productReference = 74D7FD161E7B826B00070158 /* Contacts Redo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74D7FD291E7B826B00070158 /* Contacts RedoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D7FD411E7B826B00070158 /* Build configuration list for PBXNativeTarget "Contacts RedoTests" */;
+			buildPhases = (
+				74D7FD261E7B826B00070158 /* Sources */,
+				74D7FD271E7B826B00070158 /* Frameworks */,
+				74D7FD281E7B826B00070158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74D7FD2C1E7B826B00070158 /* PBXTargetDependency */,
+			);
+			name = "Contacts RedoTests";
+			productName = "Contacts RedoTests";
+			productReference = 74D7FD2A1E7B826B00070158 /* Contacts RedoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74D7FD341E7B826B00070158 /* Contacts RedoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D7FD441E7B826B00070158 /* Build configuration list for PBXNativeTarget "Contacts RedoUITests" */;
+			buildPhases = (
+				74D7FD311E7B826B00070158 /* Sources */,
+				74D7FD321E7B826B00070158 /* Frameworks */,
+				74D7FD331E7B826B00070158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74D7FD371E7B826B00070158 /* PBXTargetDependency */,
+			);
+			name = "Contacts RedoUITests";
+			productName = "Contacts RedoUITests";
+			productReference = 74D7FD351E7B826B00070158 /* Contacts RedoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74D7FD0E1E7B826B00070158 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = 3..2..1..GO;
+				TargetAttributes = {
+					74D7FD151E7B826B00070158 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 68FLA3XZ62;
+						ProvisioningStyle = Automatic;
+					};
+					74D7FD291E7B826B00070158 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 68FLA3XZ62;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 74D7FD151E7B826B00070158;
+					};
+					74D7FD341E7B826B00070158 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 68FLA3XZ62;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 74D7FD151E7B826B00070158;
+					};
+				};
+			};
+			buildConfigurationList = 74D7FD111E7B826B00070158 /* Build configuration list for PBXProject "Contacts Redo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74D7FD0D1E7B826B00070158;
+			productRefGroup = 74D7FD171E7B826B00070158 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74D7FD151E7B826B00070158 /* Contacts Redo */,
+				74D7FD291E7B826B00070158 /* Contacts RedoTests */,
+				74D7FD341E7B826B00070158 /* Contacts RedoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74D7FD141E7B826B00070158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D7FD241E7B826B00070158 /* LaunchScreen.storyboard in Resources */,
+				74D7FD211E7B826B00070158 /* Assets.xcassets in Resources */,
+				74D7FD1F1E7B826B00070158 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D7FD281E7B826B00070158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D7FD331E7B826B00070158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74D7FD121E7B826B00070158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D7FD1C1E7B826B00070158 /* ViewController.swift in Sources */,
+				74D7FD1A1E7B826B00070158 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D7FD261E7B826B00070158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D7FD2F1E7B826B00070158 /* Contacts_RedoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D7FD311E7B826B00070158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D7FD3A1E7B826B00070158 /* Contacts_RedoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74D7FD2C1E7B826B00070158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74D7FD151E7B826B00070158 /* Contacts Redo */;
+			targetProxy = 74D7FD2B1E7B826B00070158 /* PBXContainerItemProxy */;
+		};
+		74D7FD371E7B826B00070158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74D7FD151E7B826B00070158 /* Contacts Redo */;
+			targetProxy = 74D7FD361E7B826B00070158 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74D7FD1D1E7B826B00070158 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74D7FD1E1E7B826B00070158 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74D7FD221E7B826B00070158 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74D7FD231E7B826B00070158 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74D7FD3C1E7B826B00070158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74D7FD3D1E7B826B00070158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74D7FD3F1E7B826B00070158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 68FLA3XZ62;
+				INFOPLIST_FILE = "Contacts Redo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sakota.Contacts-Redo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		74D7FD401E7B826B00070158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 68FLA3XZ62;
+				INFOPLIST_FILE = "Contacts Redo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sakota.Contacts-Redo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		74D7FD421E7B826B00070158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 68FLA3XZ62;
+				INFOPLIST_FILE = "Contacts RedoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sakota.Contacts-RedoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contacts Redo.app/Contacts Redo";
+			};
+			name = Debug;
+		};
+		74D7FD431E7B826B00070158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 68FLA3XZ62;
+				INFOPLIST_FILE = "Contacts RedoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sakota.Contacts-RedoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contacts Redo.app/Contacts Redo";
+			};
+			name = Release;
+		};
+		74D7FD451E7B826B00070158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 68FLA3XZ62;
+				INFOPLIST_FILE = "Contacts RedoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sakota.Contacts-RedoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Contacts Redo";
+			};
+			name = Debug;
+		};
+		74D7FD461E7B826B00070158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 68FLA3XZ62;
+				INFOPLIST_FILE = "Contacts RedoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sakota.Contacts-RedoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Contacts Redo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74D7FD111E7B826B00070158 /* Build configuration list for PBXProject "Contacts Redo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D7FD3C1E7B826B00070158 /* Debug */,
+				74D7FD3D1E7B826B00070158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74D7FD3E1E7B826B00070158 /* Build configuration list for PBXNativeTarget "Contacts Redo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D7FD3F1E7B826B00070158 /* Debug */,
+				74D7FD401E7B826B00070158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		74D7FD411E7B826B00070158 /* Build configuration list for PBXNativeTarget "Contacts RedoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D7FD421E7B826B00070158 /* Debug */,
+				74D7FD431E7B826B00070158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		74D7FD441E7B826B00070158 /* Build configuration list for PBXNativeTarget "Contacts RedoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D7FD451E7B826B00070158 /* Debug */,
+				74D7FD461E7B826B00070158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74D7FD0E1E7B826B00070158 /* Project object */;
+}
