@@ -14,7 +14,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = editButtonItem
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
