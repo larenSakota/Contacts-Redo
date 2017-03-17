@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7481D59D1E7C5DD300B56A11 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481D59C1E7C5DD300B56A11 /* Contact.swift */; };
 		74D7FD1A1E7B826B00070158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD191E7B826B00070158 /* AppDelegate.swift */; };
 		74D7FD1C1E7B826B00070158 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD1B1E7B826B00070158 /* DetailViewController.swift */; };
 		74D7FD1F1E7B826B00070158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D7FD1D1E7B826B00070158 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7481D59C1E7C5DD300B56A11 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		74D7FD161E7B826B00070158 /* Contacts Redo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contacts Redo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D7FD191E7B826B00070158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74D7FD1B1E7B826B00070158 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				74D7FD191E7B826B00070158 /* AppDelegate.swift */,
 				74D7FD1B1E7B826B00070158 /* DetailViewController.swift */,
 				74D7FD491E7B9CF500070158 /* EditContactController.swift */,
+				7481D59C1E7C5DD300B56A11 /* Contact.swift */,
 				74D7FD471E7B84E800070158 /* ContactsTableViewController.swift */,
 				74D7FD1D1E7B826B00070158 /* Main.storyboard */,
 				74D7FD201E7B826B00070158 /* Assets.xcassets */,
@@ -270,6 +273,7 @@
 			files = (
 				74D7FD4A1E7B9CF500070158 /* EditContactController.swift in Sources */,
 				74D7FD1C1E7B826B00070158 /* DetailViewController.swift in Sources */,
+				7481D59D1E7C5DD300B56A11 /* Contact.swift in Sources */,
 				74D7FD1A1E7B826B00070158 /* AppDelegate.swift in Sources */,
 				74D7FD481E7B84E800070158 /* ContactsTableViewController.swift in Sources */,
 			);
@@ -522,6 +526,7 @@
 				74D7FD401E7B826B00070158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74D7FD411E7B826B00070158 /* Build configuration list for PBXNativeTarget "Contacts RedoTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +535,7 @@
 				74D7FD431E7B826B00070158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74D7FD441E7B826B00070158 /* Build configuration list for PBXNativeTarget "Contacts RedoUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +544,7 @@
 				74D7FD461E7B826B00070158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

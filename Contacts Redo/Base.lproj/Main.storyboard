@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndg-tb-AT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2505" y="128"/>
+            <point key="canvasLocation" x="1841" y="127"/>
         </scene>
         <!--Edit Contact Controller-->
         <scene sceneID="nQR-eB-J49">
@@ -119,7 +119,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIp-4G-H3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2188" y="913"/>
+            <point key="canvasLocation" x="1841" y="972"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nVe-8O-CqY">
@@ -137,7 +137,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YiH-mi-9ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="128.18590704647679"/>
+            <point key="canvasLocation" x="346" y="128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tjF-ys-r6c">
@@ -155,7 +155,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYh-st-wLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345" y="913"/>
+            <point key="canvasLocation" x="1378" y="972"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c1D-CC-bJO">
@@ -173,11 +173,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loZ-0Q-UFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1724" y="-368"/>
+            <point key="canvasLocation" x="1356" y="-367"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Zh4-5g-xcA"/>
         <segue reference="8IF-1k-cdj"/>
+        <segue reference="iRn-lk-ZVU"/>
     </inferredMetricsTieBreakers>
 </document>

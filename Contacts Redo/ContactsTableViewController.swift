@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import os.log
+import Contacts
+import ContactsUI
 
 class ContactsTableViewController: UITableViewController {
 
+    var contacts = [Contact]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let sheilla = Contact(name: "Sheilla", number: "12345")
+        
+        self.contacts.append(sheilla)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -34,14 +43,18 @@ class ContactsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return self.contacts.count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactList", for: indexPath)
+        
+        let contact = contacts[indexPath.row]
 
-        cell.textLabel?.text = "Test"
+        if let name = contact.name {
+            cell.textLabel?.text = name
+        }
 
         return cell
     }
