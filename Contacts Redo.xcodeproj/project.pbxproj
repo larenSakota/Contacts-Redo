@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		74D7FD1A1E7B826B00070158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD191E7B826B00070158 /* AppDelegate.swift */; };
-		74D7FD1C1E7B826B00070158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD1B1E7B826B00070158 /* ViewController.swift */; };
+		74D7FD1C1E7B826B00070158 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD1B1E7B826B00070158 /* DetailViewController.swift */; };
 		74D7FD1F1E7B826B00070158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D7FD1D1E7B826B00070158 /* Main.storyboard */; };
 		74D7FD211E7B826B00070158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D7FD201E7B826B00070158 /* Assets.xcassets */; };
 		74D7FD241E7B826B00070158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D7FD221E7B826B00070158 /* LaunchScreen.storyboard */; };
 		74D7FD2F1E7B826B00070158 /* Contacts_RedoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD2E1E7B826B00070158 /* Contacts_RedoTests.swift */; };
 		74D7FD3A1E7B826B00070158 /* Contacts_RedoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD391E7B826B00070158 /* Contacts_RedoUITests.swift */; };
+		74D7FD481E7B84E800070158 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD471E7B84E800070158 /* ContactsTableViewController.swift */; };
+		74D7FD4A1E7B9CF500070158 /* EditContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD491E7B9CF500070158 /* EditContactController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		74D7FD161E7B826B00070158 /* Contacts Redo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contacts Redo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D7FD191E7B826B00070158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74D7FD1B1E7B826B00070158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74D7FD1B1E7B826B00070158 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		74D7FD1E1E7B826B00070158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74D7FD201E7B826B00070158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74D7FD231E7B826B00070158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		74D7FD351E7B826B00070158 /* Contacts RedoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contacts RedoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D7FD391E7B826B00070158 /* Contacts_RedoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts_RedoUITests.swift; sourceTree = "<group>"; };
 		74D7FD3B1E7B826B00070158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D7FD471E7B84E800070158 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		74D7FD491E7B9CF500070158 /* EditContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContactController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				74D7FD191E7B826B00070158 /* AppDelegate.swift */,
-				74D7FD1B1E7B826B00070158 /* ViewController.swift */,
+				74D7FD1B1E7B826B00070158 /* DetailViewController.swift */,
+				74D7FD491E7B9CF500070158 /* EditContactController.swift */,
+				74D7FD471E7B84E800070158 /* ContactsTableViewController.swift */,
 				74D7FD1D1E7B826B00070158 /* Main.storyboard */,
 				74D7FD201E7B826B00070158 /* Assets.xcassets */,
 				74D7FD221E7B826B00070158 /* LaunchScreen.storyboard */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D7FD1C1E7B826B00070158 /* ViewController.swift in Sources */,
+				74D7FD4A1E7B9CF500070158 /* EditContactController.swift in Sources */,
+				74D7FD1C1E7B826B00070158 /* DetailViewController.swift in Sources */,
 				74D7FD1A1E7B826B00070158 /* AppDelegate.swift in Sources */,
+				74D7FD481E7B84E800070158 /* ContactsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

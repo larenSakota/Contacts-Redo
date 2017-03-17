@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  Contacts Redo
 //
 //  Created by Laren Sakota on 3/16/17.
@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import os.log
 
-class ViewController: UIViewController {
+
+class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = editButtonItem
         // Do any additional setup after loading the view, typically from a nib.
     }
 
