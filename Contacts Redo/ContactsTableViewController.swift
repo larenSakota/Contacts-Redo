@@ -20,8 +20,6 @@ class ContactsTableViewController: UITableViewController {
         
         loadSampleContacts()
         
-//        let sheilla = Contact(name: "Sheilla Sakota", number: "123-456-7890")
-//        self.contacts.append(sheilla)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -69,7 +67,7 @@ class ContactsTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -79,7 +77,7 @@ class ContactsTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+
 
     /*
     // Override to support rearranging the table view.
@@ -101,11 +99,30 @@ class ContactsTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell)!
-        let contact = self.contacts[indexPath.row]
-        let destination = segue.destination as! DetailViewController
-        destination.contact = contact
+        
+        super.prepare(for: segue, sender: sender)
+        
+        switch(segue.identifier ?? "") {
+            
+        case "AddItem":
+            os_log("Adding a new contact.", log: OSLog.default, type: .debug)
+            
+        case "ShowDetail":
+            let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell)!
+            let contact = self.contacts[indexPath.row]
+            let destination = segue.destination as! DetailViewController
+            destination.contact = contact
+            
+        default:
+            fatalError("Unexpected Segue Identifier; \(segue.identifier)")
+        }
     }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell)!
+//        let contact = self.contacts[indexPath.row]
+//        let destination = segue.destination as! DetailViewController
+//        destination.contact = contact
+//    }
     
     //MARK: Private Methods
     

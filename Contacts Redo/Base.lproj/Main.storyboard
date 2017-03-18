@@ -38,7 +38,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Ybx-aB-Fo7" kind="show" id="iRn-lk-ZVU"/>
+                                    <segue destination="Ybx-aB-Fo7" kind="show" identifier="ShowDetail" id="iRn-lk-ZVU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" title="Contacts" id="VCF-DX-NAp">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="7Yo-di-cwP">
                             <connections>
-                                <segue destination="FH2-Zv-j43" kind="presentation" id="Wiv-0q-mcg"/>
+                                <segue destination="FH2-Zv-j43" kind="showDetail" identifier="AddItem" id="Wiv-0q-mcg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -115,7 +115,7 @@
                     <navigationItem key="navigationItem" id="yUF-hk-D7g">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="3vo-Zo-JbO">
                             <connections>
-                                <segue destination="FH2-Zv-j43" kind="presentation" id="8IF-1k-cdj"/>
+                                <segue destination="FH2-Zv-j43" kind="presentation" identifier="EditItem" id="8IF-1k-cdj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -138,16 +138,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="editContact" id="I2R-Bl-Ebi">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I2R-Bl-Ebi" id="uSr-QW-Mci">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3wu-Nc-LpP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <prototypes>
+                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="editContact" id="T6w-th-tge">
+                                    <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T6w-th-tge" id="hed-5x-Ouv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </tableViewCellContentView>
+                                </tableViewCell>
+                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="aim-3z-tTp">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aim-3z-tTp" id="TKp-DS-cmE">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </tableViewCellContentView>
+                                </tableViewCell>
+                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="htb-oq-3gX">
+                                    <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="htb-oq-3gX" id="aK6-BF-X2q">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </tableViewCellContentView>
+                                </tableViewCell>
+                            </prototypes>
+                            <sections/>
+                        </tableView>
                         <connections>
                             <outlet property="dataSource" destination="RbJ-6P-ADP" id="NrF-Dc-obe"/>
                             <outlet property="delegate" destination="RbJ-6P-ADP" id="rZE-Ky-Pxf"/>
