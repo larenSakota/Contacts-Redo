@@ -11,9 +11,24 @@ import os.log
 
 
 class EditContactController: UITableViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet weak var doneBtn: UIBarButtonItem!
+    
+    
+    var contact: Contact?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameText.delegate = self
+        
+        // Set up views if editing an existing Contact.
+        if let contact = contact {
+            navigationItem.title = contact.name
+            nameText.text = contact.name
+            phoneText.text = contact.number
+            editImage.image = contact.photo
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -31,7 +46,7 @@ class EditContactController: UITableViewController, UITextFieldDelegate, UIImage
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,10 +56,21 @@ class EditContactController: UITableViewController, UITextFieldDelegate, UIImage
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "editContact", for: indexPath)
-
-        // Configure the cell...
-
+        
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        let cellIdentifier = "ContactTableViewCell"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ContactTableViewCell  else {
+            fatalError("The dequeued cell is not an instance of ContactTableViewCell.")
+        }
+        
+        // Fetches the appropriate meal for the data source layout.
+//        let contact = contact[indexPath.row]
+//        
+//        cell.nameLabel.text = meal.name
+//        cell.photoImageView.image = meal.photo
+//        cell.ratingControl.rating = meal.rating
+        
         return cell
     }
 

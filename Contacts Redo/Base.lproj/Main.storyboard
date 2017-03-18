@@ -30,12 +30,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aQd-T7-6Mb" id="plT-qV-oga">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9m5-06-Bvw">
-                                            <rect key="frame" x="8" y="-9" width="60" height="60"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="Ybx-aB-Fo7" kind="show" identifier="ShowDetail" id="iRn-lk-ZVU"/>
@@ -139,37 +133,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3wu-Nc-LpP">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <prototypes>
-                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="editContact" id="T6w-th-tge">
-                                    <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContactTableViewCell" rowHeight="103" id="T6w-th-tge" customClass="ContactTableViewCell" customModule="Contacts_Redo" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="28" width="375" height="103"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T6w-th-tge" id="hed-5x-Ouv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0jX-5c-lHf">
+                                                <rect key="frame" x="8" y="16" width="95" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-D9-Z8E">
+                                                <rect key="frame" x="111" y="11" width="256" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="INY-ha-7Jh">
+                                                <rect key="frame" x="111" y="44" width="256" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
                                     </tableViewCellContentView>
-                                </tableViewCell>
-                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="aim-3z-tTp">
-                                    <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aim-3z-tTp" id="TKp-DS-cmE">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </tableViewCellContentView>
-                                </tableViewCell>
-                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="htb-oq-3gX">
-                                    <rect key="frame" x="0.0" y="116" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="htb-oq-3gX" id="aK6-BF-X2q">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </tableViewCellContentView>
+                                    <connections>
+                                        <outlet property="editImage" destination="0jX-5c-lHf" id="iZ7-K8-hZa"/>
+                                        <outlet property="nameText" destination="alJ-D9-Z8E" id="W3k-On-98D"/>
+                                        <outlet property="phoneText" destination="INY-ha-7Jh" id="dk9-d7-8la"/>
+                                    </connections>
                                 </tableViewCell>
                             </prototypes>
                             <sections/>
                         </tableView>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="RbJ-6P-ADP" id="NrF-Dc-obe"/>
                             <outlet property="delegate" destination="RbJ-6P-ADP" id="rZE-Ky-Pxf"/>
@@ -183,10 +187,13 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="6sr-iw-X0S"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneBtn" destination="6sr-iw-X0S" id="lIP-PH-uBG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIp-4G-H3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2356" y="894"/>
+            <point key="canvasLocation" x="2356" y="893.70314842578716"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nVe-8O-CqY">
@@ -244,7 +251,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Zh4-5g-xcA"/>
-        <segue reference="8IF-1k-cdj"/>
+        <segue reference="Wiv-0q-mcg"/>
+        <segue reference="iRn-lk-ZVU"/>
     </inferredMetricsTieBreakers>
 </document>
