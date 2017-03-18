@@ -17,7 +17,6 @@
 		74D7FD2F1E7B826B00070158 /* Contacts_RedoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD2E1E7B826B00070158 /* Contacts_RedoTests.swift */; };
 		74D7FD3A1E7B826B00070158 /* Contacts_RedoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD391E7B826B00070158 /* Contacts_RedoUITests.swift */; };
 		74D7FD481E7B84E800070158 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD471E7B84E800070158 /* ContactsTableViewController.swift */; };
-		74D7FD4A1E7B9CF500070158 /* EditContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FD491E7B9CF500070158 /* EditContactController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		74D7FD391E7B826B00070158 /* Contacts_RedoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts_RedoUITests.swift; sourceTree = "<group>"; };
 		74D7FD3B1E7B826B00070158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74D7FD471E7B84E800070158 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
-		74D7FD491E7B9CF500070158 /* EditContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContactController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +105,6 @@
 			children = (
 				74D7FD191E7B826B00070158 /* AppDelegate.swift */,
 				74D7FD1B1E7B826B00070158 /* DetailViewController.swift */,
-				74D7FD491E7B9CF500070158 /* EditContactController.swift */,
 				7481D59E1E7D6ACB00B56A11 /* ContactTableViewCell.swift */,
 				7481D59C1E7C5DD300B56A11 /* Contact.swift */,
 				74D7FD471E7B84E800070158 /* ContactsTableViewController.swift */,
@@ -275,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7481D59F1E7D6ACB00B56A11 /* ContactTableViewCell.swift in Sources */,
-				74D7FD4A1E7B9CF500070158 /* EditContactController.swift in Sources */,
 				74D7FD1C1E7B826B00070158 /* DetailViewController.swift in Sources */,
 				7481D59D1E7C5DD300B56A11 /* Contact.swift in Sources */,
 				74D7FD1A1E7B826B00070158 /* AppDelegate.swift in Sources */,
